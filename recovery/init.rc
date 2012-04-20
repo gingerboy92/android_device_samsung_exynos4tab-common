@@ -6,15 +6,15 @@ on init
     export ANDROID_ROOT      /system
     export ANDROID_DATA      /data
     export ANDROID_CACHE     /cache
-    export EXTERNAL_STORAGE  /emmc
-    export SECONDARY_STORAGE /sdcard
+    export EXTERNAL_STORAGE  /sdcard
+    export SECONDARY_STORAGE /emmc
 
     symlink /system/etc /etc
 
     mkdir /boot
     mkdir /recovery
-    mkdir /emmc
     mkdir /sdcard
+    mkdir /emmc
     mkdir /usbdisk
     mkdir /system
     mkdir /data
