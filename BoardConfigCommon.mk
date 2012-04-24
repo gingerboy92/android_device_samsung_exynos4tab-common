@@ -113,8 +113,9 @@ EXTRA_MODULES:
 	cd hardware/compat-wireless; ./scripts/driver-select ath6kl
 	export CROSS_COMPILE=$(ARM_EABI_TOOLCHAIN)/arm-eabi-; $(MAKE) -C hardware/compat-wireless KLIB=$(KERNEL_SRC) KLIB_BUILD=$(KERNEL_OUT) ARCH=$(TARGET_ARCH) $(ARM_CROSS_COMPILE)
 	export CROSS_COMPILE=$(ARM_EABI_TOOLCHAIN)/arm-eabi-; $(MAKE) -C hardware/compat-wireless KLIB=$(KERNEL_SRC) KLIB_BUILD=$(KERNEL_OUT) ARCH=$(TARGET_ARCH) $(ARM_CROSS_COMPILE) install-modules
+	cd hardware/compat-wireless; ./scripts/driver-select restore
 	cp `find $(KERNEL_OUT)/$(TARGET_KERNEL_SOURCE) -name *.ko` $(KERNEL_MODULES_OUT)/
-	arm-eabi-strip --strip-debug `find $(KERNEL_MODULES_OUT) -name *.ko`
+	$(ARM_EABI_TOOLCHAIN)/arm-eabi-strip --strip-debug `find $(KERNEL_MODULES_OUT) -name *.ko`
 
 TARGET_KERNEL_MODULES := EXTRA_MODULES
 
