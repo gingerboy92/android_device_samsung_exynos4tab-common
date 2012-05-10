@@ -190,3 +190,5 @@ $(call inherit-product, frameworks/base/build/tablet-dalvik-heap.mk)
 
 # Include exynos4 platform specific parts
 $(call inherit-product, hardware/samsung/exynos4/Android.mk)
+$(call inherit-product, hardware/samsung/exynos4/smdk4210.mk)
+
