@@ -38,6 +38,7 @@ endif
 
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_FAMILY := exynos4tab
+TARGET_SOC := exynos4210
 TARGET_BOOTLOADER_BOARD_NAME := smdk4210
 TARGET_BOARD_INFO_FILE := device/samsung/exynos4tab-common/board-info.txt
 
@@ -65,6 +66,9 @@ TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/exynos4tab-common/
 # Graphics
 BOARD_EGL_CFG := device/samsung/exynos4tab-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
+
+# HAL
+BOARD_HAL_PATH := hardware/samsung/$(TARGET_BOARD_PLATFORM)/hal
 
 # HWComposer
 BOARD_USES_HWCOMPOSER := true

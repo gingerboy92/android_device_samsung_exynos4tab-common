@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
 
 # HAL
 PRODUCT_PACKAGES += \
+    camera.exynos4 \
     lights.exynos4 \
     libhwconverter \
     libswconverter \
