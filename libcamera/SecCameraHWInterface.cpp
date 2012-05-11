@@ -2971,7 +2971,7 @@ void CameraHardwareSec::release()
 static CameraInfo sCameraInfo[] = {
     {
         CAMERA_FACING_BACK,
-        90,  /* orientation */
+        0,  /* orientation */
     },
     {
         CAMERA_FACING_FRONT,
