@@ -37,6 +37,7 @@ endif
 
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_FAMILY := exynos4tab
+TARGET_SOC := exynos4210
 TARGET_BOOTLOADER_BOARD_NAME := smdk4210
 TARGET_BOARD_INFO_FILE := device/samsung/exynos4tab-common/board-info.txt
 
@@ -81,6 +82,9 @@ BOARD_USES_MFC_FPS := true
 # Audio
 BOARD_USE_YAMAHAPLAYER := true
 BOARD_USE_SAMSUNG_SEPARATEDSTREAM = true
+
+# Camera
+CAMERA_USE_OPEN_HAL := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
