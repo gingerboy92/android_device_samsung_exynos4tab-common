@@ -66,6 +66,9 @@ TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/exynos4tab-common/
 BOARD_EGL_CFG := device/samsung/exynos4tab-common/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 
+# HAL
+BOARD_HAL_PATH := hardware/samsung/$(TARGET_BOARD_PLATFORM)/hal
+
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
 BOARD_USE_SECTVOUT := true
@@ -82,9 +85,6 @@ BOARD_USES_MFC_FPS := true
 # Audio
 BOARD_USE_YAMAHAPLAYER := true
 BOARD_USE_SAMSUNG_SEPARATEDSTREAM = true
-
-# Camera
-CAMERA_USE_OPEN_HAL := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
